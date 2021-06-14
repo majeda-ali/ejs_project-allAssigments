@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:#c28d6381;
+    margin: 0;
+}
+
+/*----------------Navigation Bar -----------*/
+.nav{
+display: flex;
+background-color: #3b8d99;
+position: sticky;
+top:0;
+z-index: 10000;
+justify-content: center;
+flex-direction: row;
+flex-flow: nowrap;
+padding: 0 20px;
+transition: all 2s;
+
+}
+.nav a{
+color: white;
+font-size: 17px;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+text-decoration: none;
+padding: 25px;
+font-family: 'Lobster', cursive;
+letter-spacing: 4px;
+}
+
+.nav a:hover{
+background-color: #6b6b83;
+font-style: italic;
+border-radius: 25px;
+padding: 20px 20px;
+
+
+}
+/*---- container div for all image in page home ------*/
+.container{
+    margin: auto;
+    width:50%;
+    padding: 10px;
+    margin-top: 70px;
+}
+/*----------- id of select dropdown list -----*/ 
+#options{
+    width: 100%;
+    padding: 5px;
+}
+/*---------------- Image design -----------*/
+
+.images{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    width: 80%;
+    margin:20px 10px;
+    padding: 10px;
+}
+.images> img {
+    width: 600px;
+    height: 300px;
+    z-index: -20px;
+}
+/*------- img in page home -------*/
+.imgPart>img {
+   width: 600px;
+    height: 300px;
+    color: rgb(4, 43, 58);
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+.imgPart{  
+    border:5px solid skyblue;
+    border-radius: 20px;
+    color: rgb(4, 43, 58);
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+/*--------- image page details -------*/
+ #imgDetails{
+position: relative;
+border:5px solid skyblue;
+border-radius: 20px;
+box-shadow: 4px 4px 3px skyblue ;
+left: 10px;
+top: 100px;
+width: 650px;
+height: 750px;
+    }
+
+/*-------- parent div for all info page Details-------- */
+.info-firstBook{
+display: inline-block;
+position: relative;
+text-align: center;
+left: 10px;
+bottom: 250px;
+color: rgb(2, 94, 131);
+font-size: 30px;
+}
+h2,h3{
+    padding: 5px 10px;
+    margin: 20px ;
+}
+span{
+    font-size: 20px;
+    color: rgb(2, 94, 131);
+}
+
+
+/* ------- button Filter  & anchor element  Details--------- */
+#Filter , .imgPart>a{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(2, 61, 88);
+    position: relative;
+    left: 45%;
+    margin: 50px 0;
+    padding:7px 20px;
+    color: white;
+    font-size: 16px;
+    font-family:cursive;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    bottom:10px;
+}
+/* -------Number of count book determine in page Details--------*/
+#CountOfBook{
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+    font-size: 19px;
+    font-family:cursive;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(2, 61, 88);
+    border-radius: 5px;
+}
+
+/*--------- button But is page Details-------- */
+#buyIt {
+width: 100px;
+height: 30px;
+margin-top: 40px;
+padding:0 30px;
+font-size: 17px;
+font-family:cursive;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+outline: none;
+}
+/* ----------------signUp ----------------------------- */
+
+.signUp{
+    margin: 20px;
+    padding: 20px;
+}
+.signUp>input{
+    margin: 4px 10px;
+    padding: 5px;
+}
+/* -------------footer ------*/
+.copyright {
+    background-color:  rgb(2, 61, 88);
+    color:#ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: Karla;
+    position: relative;
+    top: 350px ;
+    }

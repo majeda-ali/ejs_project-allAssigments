@@ -1,0 +1,29 @@
+<%- include('parts/header'); -%> <%# include header.ejs from view/parts %> 
+<%- include('parts/nav-bar'); -%><%# include nav-bar.ejs [Navigation] from view/parts %> 
+
+<div class="container">
+    <form action="/" method="GET">
+        <%# select dropdown list  %> 
+    <select name="options" id="options">
+        <option value="All-books" >ALL Books</option>
+        <option value="IT" > IT</option>
+        <option value= "Physics"name="boo">  Physics</option>
+        <option value="Chemistry">  Chemistry</option>
+        <option value="History"> History</option>
+    </select>
+<input type="submit" value="Filter" id="Filter" >
+</form>
+</div> 
+<div class="images">
+
+<% for (let i=0; i<books.length ; i++){ %>
+
+            <div class="imgPart"> 
+                  <img src=" <%=books[i].imageURL %>">
+                  <h2><%=books[i].name %></h2>
+                <a href="/details<%=books[i].id%>"> Details </a>
+    </div>
+     <% } %>
+    </div>
+
+<%- include('parts/footer'); -%>

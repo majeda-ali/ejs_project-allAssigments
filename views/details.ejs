@@ -1,0 +1,26 @@
+<%- include('parts/header'); -%>
+<%- include('parts/nav-bar'); -%>
+
+    <h2>Details IT Book </h2>
+    <% for( let i = 0; i < books.length; i++ ) { %>
+        <img src=" <%=books[i].imageURL %>" id="imgDetails"> 
+
+    <div class="info-firstBook">
+        <%#  
+        JSON.stringify() method converts a JavaScript object or value to a JSON string
+        -> use methos replace : replace Both Double and Single Quotes with empty string
+
+        %>
+
+            <h2><%=JSON.stringify(books[i].name ).replace(/['"]+/g, '') %> </h2>   
+            <h3><%=JSON.stringify(books[i].category ).replace(/['"]+/g, '') %></h3> 
+            <h3>$  <%=JSON.stringify(books[i].price).replace(/['"]+/g, '') %></h3>
+
+        <span>Quantity</span> 
+             <input type="number" value="" id="CountOfBook">
+            <input type="submit" value="Buy it" id="buyIt">
+    </div>
+    <% } %>
+
+    <%- include('parts/footer'); -%>
+
